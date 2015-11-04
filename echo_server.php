@@ -10,17 +10,30 @@
  */
 
 define("TOKEN", "echo_server");
-$signature = $_GET['signature'];
-$nonce = $_GET['nonce'];
-$timestamp = $_GET['timestamp'];
-$echostr = $_GET['echostr'];
 
-$tmpArr = array($nonce, $timestamp, TOKEN);
-sort($tmpArr);
+function checkSignature() {
+    $signature = $_GET['signature'];
+    $nonce = $_GET['nonce'];
+    $timestamp = $_GET['timestamp'];
 
-$tmpStr = implode($tmpArr);
-$tmpStr = sha1($tmpStr);
-if ($tmpStr == $signature) {
-    echo $echostr;
+    $tmpArr = array($nonce, $timestamp, TOKEN);
+    sort($tmpArr);
+
+    $tmpStr = implode($tmpArr);
+    $tmpStr = sha1($tmpStr);
+    if ($tmpStr == $signature) {
+        return true;
+    }
+    return false;
 }
 
+if (false == checkSignature()) {
+    exit(0);
+}
+
+$echostr = $_GET['echostr'];
+if ($echostr)
+{
+    echo $echostr;
+    exit(0);
+}
