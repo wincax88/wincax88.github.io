@@ -1,34 +1,350 @@
+<!DOCTYPE html>
 <html>
-<header>
-  <meta name="apple-itunes-app" content="app-id=954196099">
-  <script javascript>
-            //window.location.href="itms-apps://itunes.apple.com/app/id954196099"
-            //window.open("https://itunes.apple.com/cn/app/id954196099")
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
-    var openUrl = window.location.search;
-    try {
-      openUrl = openUrl.substring(1,openUrl.length);
-    }catch(e){
+  <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+  <title>首页 | 理优1对1－全国顶级名师辅导－初中在线1对1学习品牌</title>
+  <meta name="keywords" content="1对1，一对一，上海中考，小升初，高考，上海重点中学，上海中考分数线, 上海家教，一对一补习，一对一辅导，中考补习，在线教育，电子白板" />
+  <meta name="description" content="理优教育是国内领先在在线1对1学习平台，汇聚全国金字塔顶尖的老师，独特的个性化课程定制系统，为全国的中学生提供针对性的学习辅导，免费课程预约请咨询：400-169-3070" />
+  <meta http-equiv="content-language" content="zh-cn" />
+  <meta name="Contact" content="电话:4006-303030" />
+  <meta name="distribution" content="中国">
+  <meta name="copyright" content="上海理优教育科技有限公司">
+  <meta name="Author" content="理优教育" />
+  <meta name="Generator" content="理优教育" />
+  <link rel="canonical" href="http://www.leoedu.com/" />
+  <link rel="shortcut icon" href="./img/favicon.ico" /><!-- IE address前ico图标 -->
 
-    }
-    var isiOS = navigator.userAgent.match('iPad')
-      || navigator.userAgent.match('iPhone')
-      || navigator.userAgent.match('iPod'),
-      isAndroid = navigator.userAgent.match('Android'),
-      isDesktop = !isiOS&&!isAndroid;
-    if (isiOS) {
-      setTimeout(function () {
-        window.location = "itms-apps://itunes.apple.com/app/idid954196099"; },25);
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+  <link href="./css/style.css" rel="stylesheet">
 
-    }else if(isAndroid){
-      window.location = "intent://[host]/"+"url="+openUrl+"#Intent;scheme=[scheme];package=[package_name];end";
-    }else{
-      window.location.href = openUrl;
-    }
+  <link href="./css/components/service-block.css" rel="stylesheet">
+  <link href="./css/components/footer.css" rel="stylesheet">
+  <link href="./css/components/join-us.css" rel="stylesheet">
+  <link href="./css/components/download-app.css" rel="stylesheet">
+  <link href="./css/components/header.css" rel="stylesheet">
+  <link href="./css/components/main.css" rel="stylesheet">
+  <link href="./css/components/trial-courses-panel.css" rel="stylesheet">
 
-</script>
-</header>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements
+  and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via
+         file:// -->
+
+  <!--[if lt IE 9]>
+  <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- 引入 ECharts 文件 -->
+  <script src="./js/echarts.min.js"></script>
+
+</head>
 <body>
-  <p>Hello World</p>
+  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+      <span class="sr-only">切换导航</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="index.html">
+      <span class="leo-logo" title="理优1对1"><i class="iconfont icon-main-logo"></i></span>
+    </a>
+
+  </div>
+  <div class="collapse navbar-collapse" id="navbar-collapse">
+    <ul class="nav navbar-nav" id="main-menu">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="download.html" onclick="ga('send', 'event', 'link', 'click', 'nav_tutor');">APP下载</a></li>
+      <li><a href="join-us.html" onclick="ga('send', 'event', 'link', 'click', 'nav_course');">加入我们</a></li>
+    </ul>
+    <ul class="navbar-text navbar-right">
+      <span class="tel iconfont icon-tel">400-158-0101</span>
+      <span class="try trial-courses-btn">申请免费试听课</span>
+      <!--<a data-toggle="modal" data-target="#free-listen-modal"></a> -->
+    </ul>
+  </div><!-- /.navbar-collapse -->
+
+</nav>
+
+  <div id="skrollr-body">
+    <!-- banner -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- 轮播（Carousel）指标 -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+    <!-- 轮播（Carousel）项目 -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="./img/main_banner_01.jpg" alt="">
+        </div>
+        <div class="item">
+            <a onclick="ga('send', 'event', 'link', 'click', 'Banner2 Btn')" href="https://shop123923740.taobao.com" target="_blank">
+                <img src="./img/main_banner_02.jpg" alt="">
+            </a>
+        </div>
+    </div>
+
+    <!-- 轮播（Carousel）导航-->
+    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+
+</div>
+<!-- banner end -->
+    <section class="section-tutor">
+    <article class="container">
+        <div>
+            <div class="row">
+                <div class="col-lg-5 col-md-5 tutor-text">
+                    <!--data-650="left:-2%;opacity:0;" data-700="left:0;opacity:.8;"  data-800="left:0%;opacity:1;"-->
+
+                    <h3 class="small">
+                        汇聚全国金字塔顶尖的老师<br>
+                    </h3>
+                    <br>
+                    <p>
+                        800位教研团队均经过理优教研部层层选拔，全国重点中学在职老师和培训机构优秀讲师强强联手，只为能找到提分快且适合你的好老师。
+                    </p>
+                    <!--
+                    <p><a style="color:#e50012;" href="onlineenglish/tutor.html" onclick="ga('send', 'event', 'link', 'click', 'index_tutor');"> 了解更多外籍顾问<span class="glyphicon glyphicon-menu-right"></span></a></p>
+                    //-->
+                </div>
+                <div class="col-lg-7 col-md-7 tutor-chart">
+                    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+                    <div id="main_tutor" style="width: 100%;height: 100%"></div>
+                    <script src="/js/tutor_chart.js"></script>
+
+                </div>
+            </div>
+        </div>
+    </article>
+</section>
+
+
+    <section class="section-map" id="section-map">
+    <article class="container">
+        <div>
+            <div class="row">
+                <div class="col-lg-7 col-md-7 map-chart">
+                    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+                    <div id="main_map" style="width: 100%;height:100%"></div>
+                    <script src="/js/knowledge_map.js"></script>
+                </div>
+                <div class="col-lg-5 col-md-5 map-text">
+                    <!--data-650="left:-2%;opacity:0;" data-700="left:0;opacity:.8;"  data-800="left:0%;opacity:1;"-->
+
+                    <h3 class="small">
+                        知识点一网打尽，个性化课程体系量身定制学习计划
+                    </h3>
+                    <br>
+                    <p>
+                        对初中近3000个知识点进行拆分解析，专业的课前测评，全面了解知识点掌握情况，按照你的掌握程度定制学习课程，真正做到个性化辅导。
+                    </p>
+                    <!--
+                    <p><a style="color:#e50012;" href="onlineenglish/tutor.html" onclick="ga('send', 'event', 'link', 'click', 'index_tutor');"> 了解更多外籍顾问<span class="glyphicon glyphicon-menu-right"></span></a></p>
+                    //-->
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </article>
+</section>
+
+    <section class="section-pad">
+    <div class="row">
+        <h2 class="text-center">
+            创新的在线学习模式，最好玩的直播课<br>
+            <small>领先的在线直播和电子白板技术，超越传统课堂的在线学习体验，<br>在家里用iPad即可与老师进行实时语音互动学习。</small>
+        </h2>
+    </div>
+    <article class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="ipad-min">
+                    <div class="home-teachers">
+                        <video autoplay="autoplay" width="609" height="453" loop="loop" poster="">
+                            <source src="../video/ipad_demo-ipad.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+</section>
+    <section class="p-lg bg-gray">
+    <h2 class="text-center">
+        每一年，数千人次通过理优教育提升学习成绩<br>
+        <small>我们来听听，学员们为什么选择理优教育</small>
+    </h2>
+    <article class="container mt-md">
+        <div class="row member-feel home">
+            <div class="col-lg-4 col-md-4">
+                <div class="thumbnail hovereffect">
+                    <span class="hide-img2">
+                        <img src="../img/jinchengjie.png" alt="..." onclick="ga('send', 'event', 'link', 'click', 'index_tutor')">
+                    </span>
+
+                    <div class="caption">
+                        <p class="caption-title">金程杰&nbsp;&nbsp;小学五年级</p>
+                        理优学习一学期英语成绩从班级20名提升到班级第8名，对于英语语法运用有了很明显的提升。<br><br>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <div class="thumbnail hovereffect">
+                    <span class="hide-img2">
+                        <img src="../img/xubeiyi.png" alt="..." onclick="ga('send', 'event', 'link', 'click', 'index_tutor')">
+                    </span>
+
+                    <div class="caption">
+                        <p class="caption-title">徐蓓依&nbsp;&nbsp;小学六年级</p>
+                        补习数学，英语。数学一学期提升10分，基础越来越扎实，还在不断进步中；英语提升15分，对英语口语自信心大大加强。
+
+
+                     </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <div class="thumbnail hovereffect">
+                    <span class="hide-img2">
+                        <img src="../img/chenfangyi.png" alt="..." onclick="ga('send', 'event', 'link', 'click', 'index_tutor')">
+                    </span>
+
+                    <div class="caption">
+                        <p class="caption-title">陈芳怡&nbsp;&nbsp;初中二年级</p>
+                        理优学习半学期，数学稳定在班级前五，提分15-20分，从对数学没有信心到对数学非常感兴趣。<br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </article>
+</section>
+
+    <section class="team team-bg">
+    <article class="container container-lg">
+        <div class="team-img">
+            <video preload="auto" id="Comp">
+                <source src="http://source.vipabc.com/Ext/video/homePage/v3/Comp%202_100.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="row">
+            <div class="col-md-7 col-xs-7"></div>
+            <div class="col-md-5 col-xs-5 team-text" data-1800="bottom:-150px;opacity:0.8;" data-2200="bottom:-70px;opacity:1;">
+                <h3 class="small">
+                    7*24小时管家式学习服务<br>
+                </h3>
+                <br>
+                <p>
+                    近百位助教，学习顾问团队为你提供5对1微笑服务。学习规划师定制专属学习计划，名师1对1全方位授课，定期进行阶段性可是测评，名校大学生免费答疑陪读，心理老师定期纠正家庭教育方法，给孩子最好的教育环境。
+                </p>
+            </div>
+        </div>
+    </article>
+</section>
+
+</div>
+
+<div class="fixed-service-box">
+    <div class="iconfont icon-wechat" id="service_wechat">
+        <div class="float-wrapper wechat" style="display: none">
+            <img src="./img/codetwo.png" alt="">
+        </div>
+    </div>
+    <div class="iconfont icon-service go_for_service" id="service_custom">
+        <div class="float-wrapper service">
+            <a href="./baichuanim/service_chat_panel.html" target="blank">
+                <p>在线客服</p>
+            </a>
+        </div>
+    </div>
+    <div class="iconfont icon-tel" id="service_tel">
+        <div class="float-wrapper tel">
+            <p>400-158-0101</p>
+        </div>
+    </div>
+
+</div>
+  <div class="container-fluid footer">
+  <div class="row">
+    <div class="col-md-4 col-sm-12 foot foot_left">
+      <h3>关注我们</h3>
+      <div class="foot_cont" style="text-align:center;">
+        <p>
+          <a href="http://weibo.com/u/5598598733" target="_blank"><span class="sina"></span></a>
+          <a href=""><span class="weichat" id="wechat_icon"></span></a>
+        </p>
+        <span class="wechat_code">
+            <img src="img/code.png" />
+          </span>
+
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-12 foot foot_center">
+      <h3>联系我们</h3>
+      <div class="foot_cont" align="center">
+        <p>联系电话：400-158-0101</p>
+        <p>老师合作：stone@leoedu.cn</p>
+        <p>地址：上海市宜山路2016号合川大厦13楼F</p>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-12 foot foot_right">
+      <h3>友情链接</h3>
+      <div class="foot_cont" align="center">
+        <a href="http://www.jyeoo.com/" target="_blank">菁优网</a>
+        <a href="http://sh.fumubang.com/" target="_blank">父母邦</a>
+        <a href="http://www.sxkid.com/" target="_blank">上学帮</a>
+        <a href="http://www.zxxk.com/" target="_blank">学科网</a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="foot_down" align="center">
+      <img src="./img/leo.png" />
+    </div>
+    <div class="foot_down" align="center">
+      <p>Copyright © 2014 上海理优教育科技有限公司，沪ICP备14054807号</p>
+    </div>
+  </div>
+</div>
+
+
+  <!-- javascript //-->
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/bootstrap.min.js" type="text/javascript"></script>
+  <!--<script src="./js/owl.carousel.min.js"></script>//-->
+  <script src="./js/skrollr.min.js"></script>
+
+  <!--<script src="./js/jquery.pin.min.js"></script>//-->
+  <!--<script src="./js/validator.min.js"></script>//-->
+
+
+
+  <script src="./js/main.js"></script>
+  <script src="./js/service_block.js"></script>
+
+  <script src="./js/download_app.js"></script>
+
+  <script src="./js/join_us.js"></script>
+
+  <script src="./js/panel_init.js"></script>
+
+
 </body>
 </html>

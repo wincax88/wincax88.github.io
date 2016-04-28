@@ -1,0 +1,176 @@
+h3.small {
+    font-size: 28px;
+}
+
+#myCarousel {
+    padding-top: 64px;
+}
+
+.carousel-control {
+    color:#FFF;
+    font-size:60px;
+    background-image:none;
+    background: none;
+    border: none;
+}
+
+.carousel-control.right, .carousel-control.left {
+    top: 50%;
+    background-image:none;
+    background: none;
+    border: none;
+}
+
+.p-lg.bg-gray h2.text-center {
+    font-size: 32px;
+}
+
+.p-lg.bg-gray h2.text-center small {
+    font-size: 16px;
+}
+
+.hovereffect {
+    width:100%;
+    height:100%;
+    float:left;
+    overflow:hidden;
+    position:relative;
+    text-align:center;
+    cursor:default;
+}
+
+.hovereffect .overlay {
+    width:100%;
+    height:100%;
+    position:absolute;
+    overflow:hidden;
+    top:0;
+    left:0;
+    opacity:0;
+    background-color:rgba(0,0,0,0.5);
+    -webkit-transition:all .4s ease-in-out;
+    transition:all .4s ease-in-out
+}
+
+.hovereffect img {
+    display:block;
+    position:relative;
+    -webkit-transition:all 0.5s linear;
+    transition:all 0.5s linear;
+}
+
+.hovereffect:hover img {
+    -ms-transform:scale(1.0);
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+}
+
+.section-tutor {
+    height: 600px;
+    background-color: #f3f3f3;
+}
+
+.tutor-text {
+    padding-top: 100px;
+    line-height: 2.0em
+}
+
+.tutor-text p {
+    font-size: 16px;
+}
+
+.tutor-chart {
+    height: 600px;
+}
+
+.section-map {
+    height: 600px;
+    position: relative;
+    background:#333;
+}
+
+.map-chart {
+    height: 500px;
+    width: 500px;
+}
+
+.map-text {
+    padding-top: 100px;
+    line-height: 2.0em
+}
+
+.map-text h3 {
+    color: white;
+}
+.map-text p {
+    font-size: 16px;
+    color: white;
+}
+
+
+.team{position: relative; height: 570px; overflow: hidden}
+.team-img {
+    position: absolute;
+    right: 46%;
+    bottom: 0;
+    background:url("http://source.vipabc.com/Ext/images/website/abc/homePage/v3/comp-2-100.png") no-repeat;
+    width: 703px;
+    height: 563px;
+}
+.team-bg {
+    background: #f3f3f3;
+}
+.team-text p {
+    font-size: 16px;
+    line-height: 2.0em
+}
+
+/*.team-bg{background: #dbdbdb}*/
+
+.lean-text {
+    padding-top: 20px;
+    line-height: 2.0em
+}
+
+.lean-text p {
+    font-size: 16px;
+    line-height: 2.0em
+}
+
+.section-pad {
+    height: 700px;
+    background-color: #f3f3f3;
+}
+
+.ipad-video {
+    position: relative;
+    top: 50%;
+    background-color: #000;
+}
+
+.ipad-min {
+    display:block;
+    width: 780px;
+    height: 520px;
+    background: url("http://source.vipabc.com/Ext/images/website/abc/homePage/v3/ipad-min.png") no-repeat center center;
+    background-size: contain;
+    text-align:center;
+    margin:0 auto;
+}
+
+.section-pad .text-center {
+    padding-top: 20px;
+}
+.section-pad h2.text-center {
+    font-size: 32px;
+}
+
+.section-pad h2.text-center small {
+    font-size: 16px;
+}
+
+.home-teachers {
+    padding-top: 35px;
+    padding-right: 13px;
+}
+

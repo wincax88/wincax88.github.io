@@ -1,0 +1,150 @@
+/*nav*/
+
+.navbar-brand .leo-logo {
+    padding: 0 12px;
+}
+
+.navbar-brand .leo-logo i {
+    font-size: 30px;
+    font-weight: normal;
+    color: #0bceff;
+}
+
+.navbar-brand .leo-logo i {
+    margin-top: 10px;
+}
+
+.navbar-custom {
+    background-color: #ffffff;
+    border-color: #ddd;
+}
+
+.navbar-custom .navbar-text {
+    color: #ddd;
+}
+
+.navbar-custom .navbar-nav > li > a {
+    color: #ddd;
+}
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+    color: #0bceff;
+    background-color: #fff;
+}
+.navbar-custom .navbar-nav > .active > a,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+    color: #0bceff;
+    background-color: #fff;
+}
+.navbar-custom .navbar-nav > .open > a,
+.navbar-custom .navbar-nav > .open > a:hover,
+.navbar-custom .navbar-nav > .open > a:focus {
+    color: #ddd;
+    background-color: #fff;
+}
+.navbar-custom .navbar-toggle {
+    border-color: #ddd;
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+    background-color: #fff;
+}
+.navbar-custom .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.navbar-custom .navbar-collapse,
+.navbar-custom .navbar-form {
+    border-color: #ddd;
+}
+.navbar-custom .navbar-link {
+    color: #fff;
+}
+.navbar-custom .navbar-link:hover {
+    color: #ffffff;
+}
+
+/*
+.nav_over {
+    background:#fff;
+    height:55px;
+    line-height:55px;
+    width:100%;
+    position:fixed;
+    top:0;
+    z-index:9;
+    opacity:.95;
+    filter:alpha(opacity=95);
+}
+*/
+.nav_in {
+    width:1000px;
+    margin:0 auto;
+    overflow:hidden;
+}
+.nav li {
+    float:left;
+    color:#ddd;
+    font-size:18px;
+}
+
+.nav li {
+    width:110px;
+    height:42px;
+    text-align:center;
+    margin-top:5px;
+    margin-left:1px;
+}
+
+.nav li:hover,.nav li.active {
+    background:#fff;
+    color:#0bceff;
+    cursor:pointer;
+}
+
+.nav li.active a,.nav li:hover a {
+    color:#0bceff;
+}
+
+.nav a {
+    display:inline-block;
+    color:#ddd;
+    outline:none;
+    width:100%;
+}
+
+span.trial-courses-btn {
+    display: inline-block;
+    padding: 0 12px;
+    margin: 0 24px;
+    color: white;
+    background-color: #0bceff;
+    font-size: 16px;
+    line-height: 32px;
+    border-radius: 32px;
+    cursor: pointer;
+}
+
+.navbar-text .nav_right span {
+    padding: 0 12px;
+}
+.navbar-text span.tel {
+    float: left;
+    line-height: 32px;
+    padding: 0 3px;
+    font-size: 16px;
+    border-radius: 32px;
+    border: solid 1px #0bceff;
+    color: #0bceff;
+}
+
+.navbar-text span.tel:before {
+    display: inline-block;
+    height: 26px;
+    width: 26px;
+    border: solid 1px #0bceff;
+    border-radius: 50%;
+    line-height: 26px;
+    text-align: center;
+    margin-right: 2px;
+}
