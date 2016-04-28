@@ -67,7 +67,7 @@ h3.small {
 
 .section-tutor {
     height: 600px;
-    background-color: #f3f3f3;
+    background-color: #f8f8f8;
 }
 
 .tutor-text {
@@ -113,12 +113,12 @@ h3.small {
     position: absolute;
     right: 46%;
     bottom: 0;
-    background:url("http://source.vipabc.com/Ext/images/website/abc/homePage/v3/comp-2-100.png") no-repeat;
+    background:url("../../img/service_team.png") no-repeat;
     width: 703px;
     height: 563px;
 }
 .team-bg {
-    background: #f3f3f3;
+    background: #fff;
 }
 .team-text p {
     font-size: 16px;
@@ -139,7 +139,7 @@ h3.small {
 
 .section-pad {
     height: 700px;
-    background-color: #f3f3f3;
+    background-color: #fff;
 }
 
 .ipad-video {
@@ -150,9 +150,9 @@ h3.small {
 
 .ipad-min {
     display:block;
-    width: 780px;
-    height: 520px;
-    background: url("http://source.vipabc.com/Ext/images/website/abc/homePage/v3/ipad-min.png") no-repeat center center;
+    width: 770px;
+    height: 528px;
+    background: url("../../img/ipad-min.png") no-repeat;
     background-size: contain;
     text-align:center;
     margin:0 auto;
@@ -170,7 +170,7 @@ h3.small {
 }
 
 .home-teachers {
-    padding-top: 35px;
-    padding-right: 13px;
+    padding-top: 34px;
+    padding-right: 10px;
 }
 
