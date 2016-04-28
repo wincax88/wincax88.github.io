@@ -41,11 +41,12 @@
     background:#fff;
     display:none;
 }
+/*
 .alert_downloadRight,.alert_downloadLeft {
     float:left;
-    width:254px;
+    width:314px;
     padding:0 30px;
-}
+}*/
 .alert_downloadRight {border-left:1px solid #ccc;height:360px;}
 .alert_download h4{margin:0;margin-bottom:20px;font-size:18px;font-weight:normal;color:#0bceff;}
 .alert_download ul li{background:url("../../img/dot.png") no-repeat left 10px;padding-left:15px;font-size:14px;color:#000;line-height:28px;}
@@ -108,7 +109,7 @@ p.title{height:60px;line-height:60px;color:#fff;font-size:20px;text-align:center
 }
 .alert_cont p.wrong_p{padding-top:40px;}
 
-.alert_download .close{position:absolute;top:15px;right:18px;}
+.alert_download .close_button{position:absolute;top:0px;right:18px;}
 .alert_cont p input.click_no{color:#ccc;border-bottom:1px solid #ccc;}
 .alert_cont p input.click_on{color:#666;border-bottom:1px solid #666;}
 

@@ -41,9 +41,9 @@
         $(this).slideUp(200, function(){
             $(this).parent().parent().css('z-index', '900');
         });
-        //var result = getValidate($(this).parent().parent());
+        var result = getValidate($(this).parent().parent());
 
-        //handleChangeState($(this).parent().parent(), result);
+        handleChangeState($(this).parent().parent(), result);
     })
 
 
@@ -109,7 +109,7 @@
                     var html = '';
                     html += '<div class="img-ct" ><img src="./img/codetwo.png" alt=""></div>';
                     html += '<p class="weixin">理优教育在线学习APP</p>';
-                    html += '<p class="success">&nbsp&nbsp&nbsp&nbsp查看课程安排进度，了解更多课程信息请关注我们的微信公众号，1对1专属定制课程请拨打免费热线400-158-0101。</p>';
+                    html += '<p class="success">&nbsp&nbsp&nbsp&nbsp查看课程安排进度，了解更多课程信息请关注我们的微信公众号，1对1专属定制课程请拨打免费热线400-169-3070。</p>';
 
                     $('.trial-courses-panel .title-ct .title').text('祝贺您预约成功！');
                     $('.trial-courses-panel .panel-content').empty().append(html);

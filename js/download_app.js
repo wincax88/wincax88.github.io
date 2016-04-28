@@ -13,7 +13,7 @@ $(function(){
         $('.shadow').show().css('height',all_H);
         $('.stu_download').show();
     });
-    $('.stu_download .close').click(function(){
+    $('.stu_download .close_button').click(function(){
         $('.shadow').hide();
         $('.stu_download').hide();
     });
@@ -23,7 +23,7 @@ $(function(){
         $('.shadow').show().css('height',all_H);
         $('.par_download').show();
     });
-    $('.par_download .close').click(function(){
+    $('.par_download .close_button').click(function(){
         $('.shadow').hide();
         $('.par_download').hide();
     });
@@ -33,7 +33,7 @@ $(function(){
         $('.shadow').show().css('height',all_H);
         $('.teach_download').show();
     });
-    $('.teach_download .close').click(function(){
+    $('.teach_download .close_button').click(function(){
         $('.shadow').hide();
         $('.teach_download').hide();
     });

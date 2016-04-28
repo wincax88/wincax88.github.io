@@ -44,7 +44,7 @@ $(document).ready(function(){
 
         var panel_wrapper = createPanel();
         $('body')
-            .addClass('forbidden-scroll')
+            //.addClass('forbidden-scroll')
             .append(panel_wrapper);
 
 
@@ -59,6 +59,7 @@ $(document).ready(function(){
         }
 
         function show(){
+
             $('#'+_.wrapper_id).css('display', 'block');
             _.is_show = true;
             
@@ -70,6 +71,24 @@ $(document).ready(function(){
                 $('#'+_.wrapper_id).css('display', 'none');
                 _.is_show = false;
             })
+/*
+            $('.trial_courses_dialog').dialogModal({
+                topOffset: 0,
+                top: '10%',
+                type: '',
+                onOkBut: function() {},
+                onCancelBut: function() {},
+                onLoad: function(el, current) {},
+                onClose: function() {},
+                onChange: function(el, current) {
+                    if(current == 3){
+                        el.find('.dialogModal_header span').text('Page 3');
+                        $.ajax({url:'ajax.html'}).done(function(content){
+                            el.find('.dialogModal_content').html(content);
+                        });
+                    }
+                }
+            });*/
         }
     }
 
@@ -78,6 +97,7 @@ $(document).ready(function(){
         call_btn: $('.trial-courses-btn'),
         snippet_url: '../baichuanim/trial_courses_panel.html',
         wrapper_id: 'trial-courses-panel-wrapper'
+
     });
 
     window.welcome_panel = new CreatePanel({
@@ -87,14 +107,14 @@ $(document).ready(function(){
 
     trial_courses_panel.init();
 
-
+/*
     setTimeout(function(){
         if(!trial_courses_panel.is_show){
             welcome_panel.init();
             return;
         }
     }, 60000) // 60000
-
+*/
 });
 
 

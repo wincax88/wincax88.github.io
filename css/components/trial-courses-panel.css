@@ -1,4 +1,30 @@
 
+/* line 4, ../sass/update.scss */
+.trial-courses-panel form#trial-courses-form .input-wrapper:before, .welcome-panel .features-wrapper .feature:before {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 13, ../sass/update.scss */
+html, body {
+    font-size: 16px;
+    font-size: 100%;
+    color: #000;
+    background-color: #f4f4f4;
+    font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans","wenquanyi micro hei","Hiragino Sans GB", "Hiragino Sans GB W3", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 24, ../sass/update.scss */
+body.forbidden-scroll {
+    /* overflow: hidden; */
+}
+
 /* line 5, ../sass/_trial_courses_panel.scss */
 .trial-courses-panel {
     position: absolute;
@@ -230,46 +256,31 @@
     color: #ff6600;
     margin-bottom: 20px;
 }
-/* line 256, ../sass/_trial_courses_panel.scss */
-.alert-wrapper {
+/* line 33, ../sass/update.scss */
+.float-panel-wrapper {
     position: fixed;
     z-index: 999;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-    overflow: hidden;
 }
-/* line 266, ../sass/_trial_courses_panel.scss */
-.alert-wrapper.hidden {
-    display: none;
+/* line 41, ../sass/update.scss */
+.float-panel-wrapper div.black-bg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
 }
-/* line 270, ../sass/_trial_courses_panel.scss */
-.alert-wrapper .alert-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -80px;
-    margin-left: -140px;
-    width: 280px;
-    background-color: white;
-    border-radius: 6px;
-}
-/* line 280, ../sass/_trial_courses_panel.scss */
-.alert-wrapper .alert-box p {
-    text-align: center;
-    font-size: 14px;
-    color: #333;
-}
-/* line 285, ../sass/_trial_courses_panel.scss */
-.alert-wrapper .alert-box p.alert-info {
-    padding: 30px 0;
-}
-/* line 288, ../sass/_trial_courses_panel.scss */
-.alert-wrapper .alert-box p.confirm-btn {
-    line-height: 44px;
-    font-size: 15px;
-    border-top: solid 1px #eee;
+
+/*
+span.trial-courses-btn {
+    display: inline-block;
+    padding: 0 12px;
+    margin-top: 60px;
+    color: white;
+    background-color: #0bceff;
+    font-size: 16px;
+    line-height: 35px;
+    border-radius: 35px;
     cursor: pointer;
-}
+}*/
