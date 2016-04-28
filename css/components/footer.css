@@ -21,10 +21,10 @@
 
 .foot_left p span.weichat{margin-right:0;}
 .foot_left p a{margin-top:0;}
-.foot_left .sina{background:url("../../img/sina.png") no-repeat center;}
-.foot_left .sina:hover{background:url("../../img/sina_hover.png") no-repeat center;cursor:pointer;}
-.foot_left .weichat{background:url("../../img/weichat.png") no-repeat center;}
-.foot_left .weichat:hover{background:url("../../img/weichat_hover.png") no-repeat center;cursor:pointer;}
+.foot_left .sina{background:url("http://leohtml.oss-cn-shanghai.aliyuncs.com/www/img/sina.png") no-repeat center;}
+.foot_left .sina:hover{background:url("http://leohtml.oss-cn-shanghai.aliyuncs.com/www/img/sina_hover.png") no-repeat center;cursor:pointer;}
+.foot_left .weichat{background:url("http://leohtml.oss-cn-shanghai.aliyuncs.com/www/img/weichat.png") no-repeat center;}
+.foot_left .weichat:hover{background:url("http://leohtml.oss-cn-shanghai.aliyuncs.com/www/img/weichat_hover.png") no-repeat center;cursor:pointer;}
 .foot_left .foot_cont .wechat_code {
     display:none;
     margin:0;

@@ -58,11 +58,11 @@ option = {
                     }
                 },
                 data: [
-                    {value: 100, name: '第一轮教育资质面试（优先10年以上教学经验，学科带头人）'},
-                    {value: 80,  name: '第二轮教育经验名师（熟悉当地教材，准确把握中考命题方向）'},
-                    {value: 60, name: '第三轮学科专家面试（理优学科专家筛选，具备在线教育的感觉）'},
-                    {value: 40,  name: '第四轮用户评价筛选（学生评价好评率需达到80%以上）'},
-                    {value: 20, name: '理优名师，全国金字塔顶尖的老师'}
+                    {value: 100, name: '第一轮教育资质面试（优先10年以上教学经验，学科带头人）',itemStyle: {normal: {color: '#b69ae5'}}},
+                    {value: 80,  name: '第二轮教育经验名师（熟悉当地教材，准确把握中考命题方向）',itemStyle: {normal: {color: '#48d1e1'}}},
+                    {value: 60, name: '第三轮学科专家面试（理优学科专家筛选，具备在线教育的感觉）',itemStyle: {normal: {color: '#82d15b'}}},
+                    {value: 40,  name: '第四轮用户评价筛选（学生评价好评率需达到80%以上）',itemStyle: {normal: {color: '#f1c746'}}},
+                    {value: 20, name: '理优名师，全国金字塔顶尖的老师 ',itemStyle: {normal: {color: '#f47f38'}}},
                 ]
             }
         ]
@@ -119,6 +119,5 @@ option = {
         }
     ]
 };
-
 // 使用刚指定的配置项和数据显示图表。
 main_tutor.setOption(option);

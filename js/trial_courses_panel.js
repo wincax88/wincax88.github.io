@@ -55,11 +55,11 @@
         var tel = $('.input-wrapper[name="tel"] input').val();
         var has_pad = $('.input-wrapper[name="has-pad"] .fake-select').attr('value');
 
-        //console.log(name, grade, tel, has_pad);
+        console.log(name, grade, tel, has_pad);
 
         //console.log('phone number : ' + tel);
 
-        if(subject=='' || grade=='' || tel=='' || has_pad==''){
+        if(subject=='' || grade=='' || tel=='' || has_pad=='' || !subject || !grade || !has_pad){
             var alert = $('.alert-wrapper');
 
             alert.removeClass('hidden');
@@ -92,7 +92,8 @@
                 'subject': subject,
                 'grade': grade,
                 'phone': tel,
-                'has_pad': has_pad
+                'has_pad': has_pad,
+                'origin':'www'
             },
             dataType: 'JSONP',
             success: function(result){
@@ -122,7 +123,7 @@
 
 
     // close control
-    $('.trial-courses-panel > .close-btn').bind('click', function(){
+    $('#trial-close-btn').bind('click', function(){
         //console.log('aaaaaaaaaacloseeee');
         window.trial_courses_panel.is_show = false;
         $('#trial-courses-panel-wrapper').css('display', 'none');
@@ -143,7 +144,7 @@
 
             //console.log(result);
 
-            if(result == ''){
+            if(result == '' || !result){
                 return false;
             }
             return true;

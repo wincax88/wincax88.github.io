@@ -30,27 +30,29 @@ body.forbidden-scroll {
     position: absolute;
     top: 20%;
     left: 50%;
-    margin: 0 0 0 -250px;
+    margin: 0 0 0 -400px;
     padding: 40px 50px;
     box-sizing: border-box;
-    width: 500px;
+    width: 800px;
     border-radius: 6px;
     background-color: white;
 }
 /* line 19, ../sass/_trial_courses_panel.scss */
-.trial-courses-panel div.close-btn {
+.trial-right-panel .close-btn {
     z-index: 999;
-    position: absolute;
-    top: 28px;
-    right: 38px;
+    /* position: absolute; */
+    /* top: 28px; */
+    /* right: 38px; */
     height: 44px;
-    width: 44px;
+    /* width: 44px; */
     font-size: 20px;
-    text-align: center;
-    line-height: 44px;
+    text-align: right;
+    /* line-height: 44px; */
     color: #bbb;
     cursor: pointer;
+    /* margin-right: 0; */
 }
+
 /* line 38, ../sass/_trial_courses_panel.scss */
 .trial-courses-panel div.title-ct {
     margin-bottom: 40px;
@@ -284,3 +286,61 @@ span.trial-courses-btn {
     border-radius: 35px;
     cursor: pointer;
 }*/
+
+.trial-left-panel .text-center {
+    text-align: center;
+    font-size: 18px;
+    color: #484848;
+}
+.trial-left-panel h4 {
+     text-align: center;
+ }
+
+.trial-left-panel img {
+    width: 100%;
+    height: 100%;
+}
+
+/* line 256, ../sass/_trial_courses_panel.scss */
+.alert-wrapper {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+/* line 266, ../sass/_trial_courses_panel.scss */
+.alert-wrapper.hidden {
+    display: none;
+}
+/* line 270, ../sass/_trial_courses_panel.scss */
+.alert-wrapper .alert-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -80px;
+    margin-left: -140px;
+    width: 280px;
+    background-color: white;
+    border-radius: 6px;
+}
+/* line 280, ../sass/_trial_courses_panel.scss */
+.alert-wrapper .alert-box p {
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+/* line 285, ../sass/_trial_courses_panel.scss */
+.alert-wrapper .alert-box p.alert-info {
+    padding: 30px 0;
+}
+/* line 288, ../sass/_trial_courses_panel.scss */
+.alert-wrapper .alert-box p.confirm-btn {
+    line-height: 44px;
+    font-size: 15px;
+    border-top: solid 1px #eee;
+    cursor: pointer;
+}

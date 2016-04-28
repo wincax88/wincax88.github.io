@@ -16,9 +16,9 @@
     margin-bottom:30px;
 }
 
-.student{background:url("../../img/btn.png") no-repeat left top;}
-.parent{background:url("../../img/btn.png") no-repeat left bottom;}
-.teacher{background:url("../../img/btn.png") no-repeat left -52px;}
+.student{background:url("http://leohtml.oss-cn-shanghai.aliyuncs.com/www/img/btn.png") no-repeat left top;}
+.parent{background:url("http://leohtml.oss-cn-shanghai.aliyuncs.com/www/img/btn.png") no-repeat left bottom;}
+.teacher{background:url("http://leohtml.oss-cn-shanghai.aliyuncs.com/www/img/btn.png") no-repeat left -52px;}
 
 .pad_box img{position:absolute;}
 .pad_box img.pad{top:170px;left:-200px;opacity:0;filter:alpha(opacity=0);}
@@ -49,7 +49,7 @@
 }*/
 .alert_downloadRight {border-left:1px solid #ccc;height:360px;}
 .alert_download h4{margin:0;margin-bottom:20px;font-size:18px;font-weight:normal;color:#0bceff;}
-.alert_download ul li{background:url("../../img/dot.png") no-repeat left 10px;padding-left:15px;font-size:14px;color:#000;line-height:28px;}
+.alert_download ul li{background:url("http://leohtml.oss-cn-shanghai.aliyuncs.com/www/img/dot.png") no-repeat left 10px;padding-left:15px;font-size:14px;color:#000;line-height:28px;}
 
 /*alert*/
 
@@ -105,7 +105,7 @@ p.title{height:60px;line-height:60px;color:#fff;font-size:20px;text-align:center
     font-size:14px;
     color:#ff4747;
     padding-left:20px;
-    background:url('../../img/wrong.png') no-repeat left center;
+    background:url('http://leohtml.oss-cn-shanghai.aliyuncs.com/www/wrong.png') no-repeat left center;
 }
 .alert_cont p.wrong_p{padding-top:40px;}
 
@@ -147,28 +147,28 @@ p.title{height:60px;line-height:60px;color:#fff;font-size:20px;text-align:center
     margin-top:10px;
 }
 .step p.step01 {
-    background:url("../../img/num.png") no-repeat left top;
+    background:url("http://leohtml.oss-cn-shanghai.aliyuncs.com/www/num.png") no-repeat left top;
 }
-.step p.step02{background:url("../../img/num.png") no-repeat left -30px;}
-.step p.step03{background:url("../../img/num.png") no-repeat left -60px;}
-.step p.step04{background:url("../../img/num.png") no-repeat left -90px;}
+.step p.step02{background:url("http://leohtml.oss-cn-shanghai.aliyuncs.com/www/img/num.png") no-repeat left -30px;}
+.step p.step03{background:url("http://leohtml.oss-cn-shanghai.aliyuncs.com/www/img/num.png") no-repeat left -60px;}
+.step p.step04{background:url("http://leohtml.oss-cn-shanghai.aliyuncs.com/www/img/num.png") no-repeat left -90px;}
 
 
 /*箭头*/
 .down{
     width: 100px;
     height: 20px;
-    padding-bottom:27px;
+    padding-bottom:40px;
     position: absolute;
     bottom: 20px;
     left: 50%;
     margin-left: -50px;
     cursor: pointer;
-    background:url("../../img/arrow.png") no-repeat center bottom;
+    background:url("http://leohtml.oss-cn-shanghai.aliyuncs.com/www/img/arrow.png") no-repeat center bottom;
     z-index:198;
 }
 .down2 {
-    background:url("../../img/arrow_w.png") no-repeat center bottom;
+    background:url("http://leohtml.oss-cn-shanghai.aliyuncs.com/www/img/arrow_w.png") no-repeat center bottom;
     color:#fff;
     opacity:.6;
     filter:alpha(opacity=60);
