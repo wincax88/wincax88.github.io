@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-touch-fullscreen" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+        <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+        <title><%- locals.pageTitle %> | <%- locals.siteTitle %></title>
+        <meta name="keywords" content="1对1，一对一，理科提分王，上海中考，小升初，高考，上海重点中学，上海中考分数线, 上海家教，一对一补习，一对一辅导，中考补习，在线教育，电子白板" />
+        <meta name="description" content="理优教育是国内领先在线1对1学习平台，汇聚金字塔顶尖的理科老师，专注理科提分，独特的个性化课程定制系统，为初高中学生提供针对性的学习辅导，免费课程预约请咨询：400-169-3070" />
+        <meta http-equiv="content-language" content="zh-cn" />
+        <meta name="Contact" content="电话:4006-303030" />
+        <meta name="distribution" content="中国">
+        <meta name="copyright" content="上海理优教育科技有限公司">
+        <meta name="Author" content="理优教育" />
+        <meta name="Generator" content="理优教育" />
+        <link rel="canonical" href="http://www.leoedu.cn/" />
+        <link rel="shortcut icon" href="http://leohtml.oss-cn-shanghai.aliyuncs.com/www/img/favicon.ico" /><!-- IE address前ico图标 -->
+
+        <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+        <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.css" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+        <link href="http://leohtml.oss-cn-shanghai.aliyuncs.com/www/css/style.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/theme.css">
+        <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
+
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements
+        and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via
+               file:// -->
+
+        <!--[if lt IE 9]>
+        <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- 引入 ECharts 文件 -->
+        <script src="http://leohtml.oss-cn-shanghai.aliyuncs.com/www/js/echarts.min.js"></script>
+
+    </head>
+</head>
+<body>
+<!-- javascript //-->
+<script src="http://leohtml.oss-cn-shanghai.aliyuncs.com/www/js/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+<!--<script src="//cdn.bootcss.com/jquery-validate/1.15.0/jquery.validate.min.js"></script>//-->
+<script src="js/skrollr.min.js"></script>
+
+<!--"host":"http://leohtml.oss-cn-shanghai.aliyuncs.com/www/",//-->
+
+<script src="js/free_course_submit.js"></script>
+<!-- 强制使用移动端版本的kit -->
+<script src="https://g.alicdn.com/aliww/??h5.openim.sdk/1.0.6/scripts/wsdk.js,h5.openim.kit/0.3.3/scripts/kit.js?mobile=1" charset="utf-8"></script>
+<!-- 自动适配移动端与pc端 -->
+<!--<script src="https://g.alicdn.com/aliww/??h5.imsdk/2.1.0/scripts/yw/wsdk.js,h5.openim.kit/0.3.7/scripts/kit.js" charset="utf-8"></script>-->
+<script>
+    window.onload = function(){
+        try {
+            $.ajax({
+                url: "http://dev.www.yb1v1.com/book/get_anonymous_user",
+                dataType: "jsonp",
+                success: function(result){
+                    if (result != null) {
+                        WKIT.init({
+                            uid: result['userid'],
+                            appkey: result['appkey'],
+                            credential: result['password'],
+                            touid: result['touid'],
+                            //container: document.getElementById('service-content'),
+                            sendMsgToCustomService: true,
+                            groupId: result['groupid'],
+                            //width: width,
+                            //height: height,
+                            titleBar: false,
+                            imgUploader:false,
+                            theme: 'lightblue' //ruby, yellow, orange, green, lightgreen, blue, lightblue, purple, pink, red
+                            // welcomeMsg: '<p class="big"><span class="blue">理优1对1</span>是专业中小学在线1对1辅导机构。</p><p>汇聚来自全国的1500位金字塔顶尖的理科教研员名师，为全国中小学生提供最优质的教学服务！</p><p class="big red">理优1对1，理科提分王，为满分努力！</p><p>咨询热线：400-169-3070</p><p class="big"><span class="red">[</span>资深教研员专业指导<span class="red">]</span></p><p>小学1-6年级：奥数英语培优，冲刺重点初中<br>初中1-3年级：全科目全程跟踪，中考志愿合理化建议<br>高中1-3年级：把握学科重点，冲刺重点院校<br>详情咨询在线客服老师<br>家长您好！ 我是理优1对1的王老师，很高兴为您服务! <br>请问您想要咨询：</p><p class="red">1. 免费获取学习资料</br>2. 暑期免费十节衔接课</br>3. 试听1对1冲刺课程</br>4. 三节精品1对1冲刺课程（9.9元）</br>5. 参加测评</p>'
+                        });
+                    }
+                    else {
+                        $.showtoast('warning', "警告", '网络错误,请稍后再试');
+                    }
+                }
+            });
+        }
+        catch(ex) {
+            $.showtoast('warning', "警告", '网络错误,请稍后再试');
+        }
+        return false;
+    }
+</script>
+</body>
+</html>

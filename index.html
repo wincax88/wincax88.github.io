@@ -343,8 +343,8 @@
            <div class="col-xs-6 service">
                <h3>
                    <span class="iconfont icon-service"></span>
-                   <a href="#baichuan-service-modal" data-toggle="modal">&nbsp;在线客服</a>
-                   <!--<a onclick="service_click()">&nbsp;在线客服</a>//-->
+                   <!--<a href="#baichuan-service-modal" data-toggle="modal">&nbsp;在线客服</a>//-->
+                   <a onclick="service_click()">&nbsp;在线客服</a>
 
                </h3>
            </div>
@@ -420,49 +420,22 @@
 
         y_offsetWhenScrollDisabled= $(window).scrollTop();
         $('body').addClass('scrollDisabled').css('margin-top', -y_offsetWhenScrollDisabled);
-    }
+    };
     function enableScrollOnBody(){
         $('body').removeClass('scrollDisabled').css('margin-top', 0);
         $(window).scrollTop(y_offsetWhenScrollDisabled);
-    }
-    function free_course_link_click () {
+    };
+    function free_course_link_click() {
         $('body,html').animate({
             scrollTop: 330
         }, 800);
         return false;
     };
-    function service_click () {
-        try {
-            $.ajax({
-                url: "http://dev.www.yb1v1.com/book/get_anonymous_user",
-                dataType: "jsonp",
-                success: function(result){
-                    if (result != null) {
-                        WKIT.init({
-                            uid: result['userid'],
-                            appkey: result['appkey'],
-                            credential: result['password'],
-                            touid: result['touid'],
-                            //container: document.getElementById('service-content'),
-                            sendMsgToCustomService: true,
-                            groupId: result['groupid'],
-                            //width: width,
-                            //height: height,
-                            titleBar: false,
-                            imgUploader:false,
-                            theme: 'lightblue' //ruby, yellow, orange, green, lightgreen, blue, lightblue, purple, pink, red
-                            // welcomeMsg: '<p class="big"><span class="blue">理优1对1</span>是专业中小学在线1对1辅导机构。</p><p>汇聚来自全国的1500位金字塔顶尖的理科教研员名师，为全国中小学生提供最优质的教学服务！</p><p class="big red">理优1对1，理科提分王，为满分努力！</p><p>咨询热线：400-169-3070</p><p class="big"><span class="red">[</span>资深教研员专业指导<span class="red">]</span></p><p>小学1-6年级：奥数英语培优，冲刺重点初中<br>初中1-3年级：全科目全程跟踪，中考志愿合理化建议<br>高中1-3年级：把握学科重点，冲刺重点院校<br>详情咨询在线客服老师<br>家长您好！ 我是理优1对1的王老师，很高兴为您服务! <br>请问您想要咨询：</p><p class="red">1. 免费获取学习资料</br>2. 暑期免费十节衔接课</br>3. 试听1对1冲刺课程</br>4. 三节精品1对1冲刺课程（9.9元）</br>5. 参加测评</p>'
-                        });
-                    }
-                    else {
-                        $.showtoast('warning', "警告", '网络错误,请稍后再试');
-                    }
-                }
-            });
-        }
-        catch(ex) {
-            $.showtoast('warning', "警告", '网络错误,请稍后再试');
-        }
+    function service_click() {
+        var width = $(window).clientWidth;
+        var height = $(window).clientHeight;
+
+        window.open('chat.html', 'chatwindow', 'toolbar=no, status=no,scrollbars=0,resizable=0,menubar＝0,location=0,width='+width+',height='+height);
         return false;
     };
 
