@@ -109,6 +109,9 @@ $(function () {
                 console.log(result);
                 if (result['ret'] == 0) {
                     $.showtoast('success', "信息", '恭喜您预约成功');
+
+                    // add log
+                    submit_button_click();
                 } else {
                     $.showtoast('error', "错误", result['info']);
                 }
