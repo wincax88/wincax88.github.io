@@ -48,7 +48,7 @@
 <div class="container-fluid">
     <div class="row" id="header">
         <div class="col-xs-6 leo-logo" align="left">
-            <img src= img/leo_logo_m.png></img>
+            <img src= img/leo_logo_m.png>
         </div>
         <div class="col-xs-6 phone" align="right">
             <a href="tel:4001693070"><span class="tel iconfont icon-tel"></span></a>
@@ -175,9 +175,9 @@
                     1500位理科教研员组成的名师团队，均经过教研部层层选拔，重点初高中在职理科老师和培训机构优秀讲师强强联手。举办了两百多场初高中理科公开课，获得十万名学生及其家长的认可。
                 </p>
             </div>
-            <div class="col-xs-12" id="free-course-link">
+            <div class="col-xs-12 free-course-link">
     <p>
-        <a onclick="ga('send', 'event', 'link', 'click', 'Banner2 Btn')">
+        <a onclick="free_course_link_click()">
             立即预约试听 >
         </a>
     </p>
@@ -204,9 +204,9 @@
                     对初中近3000个知识点进行拆分解析，专业的课前测评，全面了解知识点掌握情况，按照你的掌握程度定制学习课程，真正做到个性化辅导。
                 </p>
             </div>
-            <div class="col-xs-12" id="free-course-link">
+            <div class="col-xs-12 free-course-link">
     <p>
-        <a onclick="ga('send', 'event', 'link', 'click', 'Banner2 Btn')">
+        <a onclick="free_course_link_click()">
             立即预约试听 >
         </a>
     </p>
@@ -230,9 +230,9 @@
                     领先的在线直播和电子白板技术，超越传统课堂的在线学习体验，在家里用Ipad即可与老师进行实时语音互动学习。
                 </p>
             </div>
-            <div class="col-xs-12" id="free-course-link">
+            <div class="col-xs-12 free-course-link">
     <p>
-        <a onclick="ga('send', 'event', 'link', 'click', 'Banner2 Btn')">
+        <a onclick="free_course_link_click()">
             立即预约试听 >
         </a>
     </p>
@@ -297,9 +297,9 @@
 <section class="section-student">
     <article class="container">
         <div class="row" id="article-student">
-            <div class="col-xs-12" id="free-course-link">
+            <div class="col-xs-12 free-course-link">
     <p>
-        <a onclick="ga('send', 'event', 'link', 'click', 'Banner2 Btn')">
+        <a onclick="free_course_link_click()">
             立即预约试听 >
         </a>
     </p>
@@ -325,9 +325,9 @@
                 </p>
             </div>
 
-            <div class="col-xs-12" id="free-course-link">
+            <div class="col-xs-12 free-course-link">
     <p>
-        <a onclick="ga('send', 'event', 'link', 'click', 'Banner2 Btn')">
+        <a onclick="free_course_link_click()">
             立即预约试听 >
         </a>
     </p>
@@ -342,8 +342,8 @@
         <div class="row">
            <div class="col-xs-6 service">
                <h3>
-                   <span class="tel iconfont icon-service"></span>
-                   <a href="tel:4001693070">&nbsp;在线客服</a>
+                   <span class="iconfont icon-service"></span>
+                   <a href="#baichuan-service-modal" data-toggle="modal">&nbsp;在线客服</a>
                </h3>
            </div>
             <div class="col-xs-6 phone">
@@ -356,6 +356,24 @@
         </div>
     </div>
 </nav>
+    <!-- 模态框（Modal） -->
+<div class="modal fade" id="baichuan-service-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    理优咨询老师
+                </h4>
+            </div>
+            <div class="modal-body" id="service-content">
+            </div>
+
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
 </div>
 <div class="container-fluid footer">
     <div class="row">
@@ -378,17 +396,78 @@
 
 <script type="text/javascript">
     $(document).ready(function(){
+
+        /*
         // scroll body to 0px on click
-        $('#free-course-link a').click(function () {
+        $('.free-course-link a').click(function () {
             $('body,html').animate({
-                scrollTop: 0
+                scrollTop: 330
             }, 800);
             return false;
-        });
+        });*/
     });
+    function free_course_link_click () {
+        $('body,html').animate({
+            scrollTop: 330
+        }, 800);
+        return false;
+    };
 </script>
 
 <script src="js/free_course_submit.js"></script>
+<!-- 自动适配移动端与pc端 -->
+<script src="https://g.alicdn.com/aliww/??h5.imsdk/2.1.0/scripts/yw/wsdk.js,h5.openim.kit/0.3.7/scripts/kit.js" charset="utf-8"></script>
+<script>
+    window.onload = function(){
+        $('#baichuan-service-modal').on('shown.bs.modal', function () {
+            var container = document.getElementById('service-content');
+            var width = container.clientWidth;
+            var height = container.clientHeight;
+            /*
 
+            // 指定宽高
+            WKIT.resize({
+                width: width,
+                height: height
+            });*/
+            try {
+                $.ajax({
+                    url: "http://dev.www.yb1v1.com/book/get_anonymous_user",
+                    dataType: "jsonp",
+                    success: function(result){
+                        if (result != null) {
+                            WKIT.init({
+                                uid: result['userid'],
+                                appkey: result['appkey'],
+                                credential: result['password'],
+                                touid: result['touid'],
+                                container: document.getElementById('service-content'),
+                                sendMsgToCustomService: true,
+                                groupId: result['groupid'],
+                                width: width,
+                                height: height,
+                                titleBar: false,
+                                imgUploader:false,
+                                theme: 'lightblue' //ruby, yellow, orange, green, lightgreen, blue, lightblue, purple, pink, red
+                                // welcomeMsg: '<p class="big"><span class="blue">理优1对1</span>是专业中小学在线1对1辅导机构。</p><p>汇聚来自全国的1500位金字塔顶尖的理科教研员名师，为全国中小学生提供最优质的教学服务！</p><p class="big red">理优1对1，理科提分王，为满分努力！</p><p>咨询热线：400-169-3070</p><p class="big"><span class="red">[</span>资深教研员专业指导<span class="red">]</span></p><p>小学1-6年级：奥数英语培优，冲刺重点初中<br>初中1-3年级：全科目全程跟踪，中考志愿合理化建议<br>高中1-3年级：把握学科重点，冲刺重点院校<br>详情咨询在线客服老师<br>家长您好！ 我是理优1对1的王老师，很高兴为您服务! <br>请问您想要咨询：</p><p class="red">1. 免费获取学习资料</br>2. 暑期免费十节衔接课</br>3. 试听1对1冲刺课程</br>4. 三节精品1对1冲刺课程（9.9元）</br>5. 参加测评</p>'
+                            });
+                        }
+                        else {
+                            $.showtoast('warning', "警告", '网络错误,请稍后再试');
+                        }
+                    }
+                });
+            }
+            catch(ex) {
+                $.showtoast('warning', "警告", '网络错误,请稍后再试');
+            }
+        });
+
+        $('#baichuan-service-modal').on('hidden.bs.modal', function () {
+            WKIT.destroy();
+        });
+
+    }
+</script>
 </body>
 </html>
